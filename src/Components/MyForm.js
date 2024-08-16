@@ -34,6 +34,7 @@ export default function MyForm(props) {
         <h5 className={props.DarkMode ? "text-light" : "text-dark"}>
           Number of characters: {text.length}
         </h5>
+        <h5>This is version 3</h5>
       </div>
     </>
   );
