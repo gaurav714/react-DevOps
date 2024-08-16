@@ -22,7 +22,7 @@ pipeline {
     }
     post {
         always {
-            cleanupWorkspace()
+            deleteDir() // Cleans up the workspace
         }
     }
 }
