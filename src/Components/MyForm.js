@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 
-export defaut function MyForm(props) {
+export default function MyForm(props) {
   const [text, setText] = useState("");
   return (
     <>
@@ -34,7 +34,7 @@ export defaut function MyForm(props) {
         <h5 className={props.DarkMode ? "text-light" : "text-dark"}>
           Number of characters: {text.length}
         </h5>
-        <h5>This is version 3</h5>
+        <h5>This is version 8</h5>
       </div>
     </>
   );
