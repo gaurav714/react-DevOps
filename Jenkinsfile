@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        nodejs 'nodejs20' // Replace with your desired Node.js version
+        nodejs 'node' // Replace with your desired Node.js version
     }
     stages {
         stage('Checkout') {
