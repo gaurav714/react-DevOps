@@ -22,7 +22,12 @@ pipeline {
     }
     post {
         always {
-            deleteDir() // Cleans up the workspace
+           emailext(
+                to: 'gauravnautiyal77@gmail.com.com',
+                subject: 'Build ${BUILD_STATUS} - ${JOB_NAME}',
+                body: 'Build has finished: ${BUILD_STATUS}\nCheck console output at ${BUILD_URL}'
+            )
+            deleteDir()
         }
     }
 }
