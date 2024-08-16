@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 
-export default function MyForm(props) {
+export defaut function MyForm(props) {
   const [text, setText] = useState("");
   return (
     <>
